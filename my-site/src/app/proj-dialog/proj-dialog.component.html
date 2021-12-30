@@ -1,0 +1,19 @@
+<div class="close-div">
+    <a class="close" mat-dialog-close><fa-icon [icon]="faClose" class="icon fa-2x"></fa-icon></a>
+</div>
+<h1 class="title">{{data.title}}</h1>
+<img class="image" src={{data.image}}>
+<p class="description">{{data.intro}}</p>
+<p class="description">{{data.description}}</p>
+<p class="lang"><b><u>Languages</u>:&nbsp; </b>{{data.languages}}</p>
+<p *ngIf="data.pc" class="lang"><b><u>Photo credits</u>:&nbsp; </b><a href={{data.pc}} target="_blank">{{data.pc}}</a></p>
+<p class="code"><b>Check out the code!</b></p>
+<div class="btn-code">
+    <button type="button" class="btn btn-primary">
+        <a class="btn-txt" href={{data.gitLink}} target="_blank">
+            <span >CODE &nbsp;</span> 
+            <fa-icon [icon]="faGithub" class="icon resume-icon"></fa-icon>
+        </a>
+    </button>
+</div>
+

@@ -1,0 +1,118 @@
+.container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    margin-left:8vw;
+    margin-right:8vw;
+}
+
+
+.img-txt {
+    position: absolute;
+    font-size: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bolder;
+    visibility:hidden;
+}
+
+
+.project {
+    min-height:100vh;
+    /* background-color: #EDEEEF; */
+    background-color: #219EBC;
+    font-family: Montserrat;
+}
+
+.proj-col {
+    text-align: center;
+}
+
+.proj-img {
+    height: 250px;
+    /* height:20vw; */
+    transition: transform .2s;
+}
+
+.proj-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.proj-img:hover + .img-txt{
+    visibility: visible;
+}
+
+
+
+.proj-row {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    padding-top: 10vh;
+    color:white;
+    margin-bottom:8vh;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    font-family: Montserrat;
+    font-size: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+        margin-left:8vw;
+        margin-right:8vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        margin-left:15vw;
+        margin-right:15vw;
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 10vh;
+        color:white;
+        margin-bottom:8vh;
+        font-weight: bolder;
+        text-shadow: 1px 1px black;
+        font-family: Montserrat;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  
+        margin-left:8vw;
+        margin-right:8vw;
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 10vh;
+        color:white;
+        margin-bottom:8vh;
+        font-weight: bolder;
+        text-shadow: 1px 1px black;
+        font-family: Montserrat;
+        font-size: 2.5rem;
+    }
+}

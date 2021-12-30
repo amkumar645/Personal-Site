@@ -1,0 +1,175 @@
+a {
+    color: #219EBC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8ECAE6;
+}
+
+.blue {
+    color: #219EBC;
+}
+
+.comp-desc-left {
+    margin-top: 1vh;
+    margin-left: 3vw;
+    color: #909394
+}
+.comp-desc-right {
+    margin-top: 1vh;
+    margin-right: 3vw;
+    color: #909394
+}
+
+.comp-img {
+    height: 15vh;
+}
+
+.comp-img-left {
+    margin-left: 46vw;
+    margin-right: 46vw;
+}
+
+
+.comp-left {
+    margin-right: 10vw;
+    text-align: right;
+    height:35vh;
+}
+
+.comp-right {
+    margin-left: 10vw;
+    text-align: left;
+    margin-right:2vw;
+}
+
+.comp-title {
+    font-family: Montserrat;
+    font-size: 1.7rem;
+}
+
+@media (max-height:500px), screen and (max-width: 768px) {
+    .comp-small {
+        text-align: center;
+        margin-bottom:3vh;
+    }
+
+    .comp-small-desc {
+        text-align: left;
+        color: #909394;
+        margin-left: 7vw;
+        margin-right: 5vw;
+        margin-top: 1vh;
+        font-size:0.9rem;
+    }
+
+    .comp-small-img {
+        height: 15vh;
+        margin-bottom:1vh;
+    }
+
+    .comp-small-title {
+        font-family: Montserrat;
+        font-size: 1.5rem;
+        margin-top:3vh;
+        margin-bottom:1vh
+    }
+
+    .edu-small {
+        text-align: center;
+        margin-bottom:3vh;
+    }
+
+    .title-small {
+        text-align: center;
+        padding-top: 10vh;
+        /* color:#FBFAF5; */
+        color: white;
+        margin-bottom:5vh;
+        text-shadow: 1px 1px #219EBC;
+        font-family: Montserrat;
+        font-size: 2rem;
+    }
+}
+
+
+
+.experience {       
+    min-height: 280vh; 
+    background-color: #212529;
+    font-family: Montserrat;
+    color: white;
+    font-size: 1rem;
+}
+
+.left {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.right {
+    border-bottom: 1px solid white;
+}
+
+li {
+    margin-bottom: 1vh;
+}
+
+p {
+    margin-bottom: 0.5vh;
+}
+
+.school-img {
+    margin-top: 1vh;
+    text-align: right;
+    margin-bottom: 10vh;
+    
+}
+
+.school-img-img {
+    height: 30vh;
+}
+
+.school {
+    margin-left: 5vw;
+}
+
+.school-2 {
+    margin-top: 10vh;
+}
+
+.school-desc {
+    margin-bottom: 5vh;
+}
+
+.school-text {
+    margin-right: 3vw;
+}
+
+.space-1 {
+    height: 60vh;
+}
+
+.space-2 {
+    height: 60vh;
+}
+
+.space-3 {
+    height: 15vh;
+}
+
+.title {
+    text-align: center;
+    padding-top: 10vh;
+    /* color:#FBFAF5; */
+    color: white;
+    margin-bottom:10vh;
+    text-shadow: 1px 1px #219EBC;
+    font-family: Montserrat;
+    font-size: 3vw;
+}
+
+.yellow {
+    color: #FFB703;
+}
+

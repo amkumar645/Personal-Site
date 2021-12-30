@@ -1,0 +1,104 @@
+.arrow {
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.home {
+    height: 100vh;
+    background-image: url('src/assets/miami3.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.icon {
+    color: white;
+    filter:drop-shadow(5px 5px 5px #443A84);
+    height: 300px;
+}
+
+.icon:hover {
+    color: #219EBC;
+}
+
+.icons {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.icon-middle {
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.name {
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.name-collapsed {
+    text-align: center;
+    margin-top: 6vh;
+}
+
+.name-text {
+    color: white;
+    text-shadow: 3px 3px#443A84;
+    border: #443A84;
+    /* font-family: Shadows Into Light; */
+    font-family: Montserrat;
+    font-size: 6vw;
+    font-style: bold;
+    margin-bottom: 15vh;
+}
+
+
+.navbar {
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.navbar2 {
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.navbar-brand {
+    margin-left: 3vw;
+    color: white;
+    text-shadow: 1px 1px#443A84;
+}
+.navbar-brand:hover {
+    margin-left: 5%;
+    color: #219EBC;
+}
+
+.nav-item {
+    text-align: right;
+    margin-left: 7vw;
+    margin-right: 1vw;
+}
+
+.nav-link {
+    /* color: #FBFAF5; */
+    color: white;
+    font-size: 1rem;
+    /* text-shadow: 1px 1px#443A84; */
+}
+
+.nav-link:hover {
+    color: #219EBC;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-height:500px) {
+    .arrow {
+        visibility: hidden;
+    }
+}

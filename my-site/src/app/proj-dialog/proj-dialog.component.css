@@ -1,0 +1,69 @@
+.btn-code {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #343A3F !important;
+    border: 0px !important;
+}
+
+.btn-primary:hover {
+    background-color: #219EBC !important;
+}
+
+.btn-txt {
+    color: white;
+    text-decoration: none;
+}
+
+.close {
+    text-align: right;
+    color: darkgrey;
+}
+
+.close:hover {
+    color: black;
+}
+
+.close-div {
+    text-align:right;
+}
+
+.code {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    margin-top:5%;
+    margin-bottom:3%;
+}
+
+.description {
+    font-family: Montserrat;
+    font-size: 1rem;
+    margin-bottom:3%;
+    line-height:2;
+}
+
+.icon {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.image {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.lang {
+    font-family: Montserrat;
+    font-size: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-family: Montserrat;
+    font: bolder;
+    font-size: 2rem;
+    text-decoration: underline;
+}
