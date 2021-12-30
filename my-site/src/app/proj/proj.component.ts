@@ -60,11 +60,38 @@ export class ProjComponent implements OnInit {
       this.dialog.open(ProjDialogComponent, {
         data: {
           title: "Personal Website",
-          image: "assets/NBA2.png",
-          intro: "",
-          description: "",
+          image: "assets/Web2.png",
+          intro: "As more practice with making a functional website in Angular, I decided it was time to make my own portfolio website with Angular, Bootstrap, and Angular Material.",
+          description: "This website contains loads of information and has lots of interactive features, including this dialog. If you like it and want to know more or think I'm a good fit for an internship, contact me using the information on the home page or on the contact page directly below this page.",
           languages: "Angular",
           gitLink: "https://github.com/amkumar645/Personal-Site",
+        },
+      });
+    }
+
+    if (proj == "FT") {
+      this.dialog.open(ProjDialogComponent, {
+        data: {
+          title: "File Tree",
+          image: "assets/File2.png",
+          intro: "The Linux file system follows a clear tree structure, with both directories and files, where directories have children and files do not. This simple data structure makes the Linux file system very easy to use.",
+          description: "To simulate the Linux file system in C, a node class that was able to differentiate between directories and files was created. The actual file tree structure uses this node class and a dynamic array class to allow for several normal file system operations, such as inserting paths, getting a file/directory, and removing a file/directory.",
+          languages: "C",
+          gitLink: "https://github.com/amkumar645/FileTree",
+        },
+      });
+    }
+
+    if (proj == "Image") {
+      this.dialog.open(ProjDialogComponent, {
+        data: {
+          title: "Image Classifier",
+          image: "assets/Image2.png",
+          intro: "Classifying handwritten numbers and other such images into categories is a central problem in machine learning.",
+          description: "This project classifies images of some kind into groups through the supervised learning technique of the multi-perceptron algorithm. This algorithm combines several binary perceptrons in order to classify images into groups. Examples of potential images that can be used are digits from the MNIST dataset or doodles from Google's Quick, Draw!",
+          languages: "Java",
+          gitLink: "https://github.com/amkumar645/Image-Classifier",
+          pc: "https://www.cs.princeton.edu/"
         },
       });
     }
