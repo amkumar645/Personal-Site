@@ -45,7 +45,7 @@
             <div class="skill-bot"><h2 class="skill-bot-txt"><b>Want to see more?</b></h2></div>
             <div class="resume-btn">
                 <button type="button" class="btn btn-primary">
-                    <a href="assets/Resume.pdf" target="_blank">
+                    <a class="contact-link" href="assets/Resume.pdf" target="_blank">
                         <fa-icon [icon]="faDownload" class="icon resume-icon"></fa-icon>
                         <span class="resume-txt">     RESUME</span>   
                     </a>
@@ -62,9 +62,11 @@
             </ul>
             <div class="skill-bot"><h2 class="skill-bot-txt">Want to talk?</h2></div>
             <div class="resume-btn">
-                <button type="button" class="btn btn-primary">
-                    <fa-icon [icon]="faUsers" class="icon resume-icon"></fa-icon>
-                    <span>   CONTACT ME</span>
+                <button type="button" class="btn btn-primary" href="#contact">
+                    <a class="contact-link" href="#contact">
+                        <fa-icon [icon]="faUsers" class="icon resume-icon"></fa-icon>
+                        <span>   CONTACT ME</span>
+                    </a>
                 </button>
             </div>
         </div>

@@ -7,8 +7,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutComponent } from './about/about.component';
 import { ExpComponent } from './exp/exp.component';
 import { ProjComponent } from './proj/proj.component';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { ProjDialogComponent } from './proj-dialog/proj-dialog.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,13 +20,16 @@ import { ProjDialogComponent } from './proj-dialog/proj-dialog.component';
     AboutComponent,
     ExpComponent,
     ProjComponent,
-    ProjDialogComponent
+    ProjDialogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

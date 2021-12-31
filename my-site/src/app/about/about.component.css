@@ -13,6 +13,11 @@
     background-color: #219EBC !important;
 }
 
+.contact-link {
+    color: white;
+    text-decoration: none;
+}
+
 .desc {
     font-family: Montserrat;
     margin-top: 10vh;

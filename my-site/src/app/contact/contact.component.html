@@ -1,0 +1,49 @@
+<div class="contact">
+    <h1 class="title">Contact Me!</h1>
+    <form [formGroup]="contactFormGroup">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name</label>
+                    <input type="text" class="form-control" formControlName="name" placeholder="Your Name*" required>
+                </div>
+                <div *ngIf="!this.contactFormGroup.controls['name'].valid && this.contactFormGroup.controls['name'].touched">
+                    <p class="error-msg">Please enter a name</p>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="text" class="form-control" formControlName="email" placeholder="Your Email*">
+                </div>
+                <div *ngIf="!this.contactFormGroup.controls['email'].valid && this.contactFormGroup.controls['email'].touched">
+                    <p class="error-msg">Please enter a valid email address</p>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone</label>
+                    <input type="number" class="form-control" formControlName="phone" placeholder="Your Phone Number">
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea type="text" rows="9" class="form-control form-control-msg" formControlName="message" placeholder="Your Message*"></textarea>
+                </div>
+                <div *ngIf="!this.contactFormGroup.controls['message'].valid && this.contactFormGroup.controls['message'].touched">
+                    <p class="error-msg">Please enter a message</p>
+                </div>
+            </div>      
+        </div> 
+    </form>
+    <div *ngIf="!contactFormGroup.valid" class="submit-div">
+        <button [disabled]="!contactFormGroup.valid" class="btn submit-btn" color="primary" (click)="onSubmit()">Send Message</button>
+    </div> 
+    <div *ngIf="this.contactFormGroup.controls['phone'].value && contactFormGroup.valid" class="submit-div">
+        <a href="mailto:amkumar@princeton.edu?subject=Message from {{this.contactFormGroup.value.name}}&body=Dear Arnav,%0A%0A{{this.contactFormGroup.value.message}}%0A%0AMy phone number is {{this.contactFormGroup.value.phone}}.%0A%0AThanks,%0A{{this.contactFormGroup.value.name}}">
+            <button [disabled]="!contactFormGroup.valid" class="btn submit-btn" color="primary" (click)="onSubmit()">Send Message</button>
+        </a>
+    </div>  
+    <div *ngIf="!this.contactFormGroup.controls['phone'].value && contactFormGroup.valid" class="submit-div">
+        <a href="mailto:amkumar@princeton.edu?subject=Message from {{this.contactFormGroup.value.name}}&body=Dear Arnav,%0A%0A{{this.contactFormGroup.value.message}}%0A%0AThanks,%0A{{this.contactFormGroup.value.name}}">
+            <button [disabled]="!contactFormGroup.valid" class="btn submit-btn" color="primary" (click)="onSubmit()">Send Message</button>
+        </a>
+    </div>  
+</div>
