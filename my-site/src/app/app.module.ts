@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ProjDialogComponent } from './proj-dialog/proj-dialog.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ExpComponent,
     ProjComponent,
     ProjDialogComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,95 @@
+.footer {
+    min-height:20vh;
+    width:100vw;
+    background-color: black;
+    font-family: Montserrat;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.icon {
+    color: grey;
+    height: 300px;
+}
+
+.icon:hover {
+    color: #219EBC;
+}
+
+.icons {
+    margin-top: 7vh;
+    text-align: center;
+}
+
+.icon-middle {
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.top-txt {
+    padding-top:8vh;
+    color: grey;
+    margin-left: 10vw;
+    font-size:0.8rem;
+}
+
+.top-txt:hover {
+    padding-top:8vh;
+    color: #219EBC;
+    margin-left: 10vw;
+    font-size:0.8rem;
+}
+
+.update-txt {
+    padding-top:8vh;
+    color: grey;
+    margin-left: 3vw;
+    font-size:0.8rem;
+}
+
+@media (max-width:768px) {
+    .icon {
+        color: grey;
+        height: 300px;
+    }
+    
+    .icon:hover {
+        color: #219EBC;
+    }
+    
+    .icons {
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .top {
+        text-align: center;
+
+    }
+    .top-txt {
+        padding-top:3vh;
+        color: grey;
+        font-size:0.8rem;
+        margin-right:10vw;
+    }
+
+    .top-txt:hover {
+        padding-top:3vh;
+        color: #219EBC;
+        font-size:0.8rem;
+        margin-right:10vw;
+    }
+
+    .update-txt {
+        padding-top:3vh;
+        color: grey;
+        font-size:0.8rem;
+        text-align: center;
+    }
+}

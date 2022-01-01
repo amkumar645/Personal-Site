@@ -26,6 +26,7 @@ export class ProjComponent implements OnInit {
           gitLink: "https://github.com/amkumar645/Seam-Carver",
           pc: "https://www.cs.princeton.edu/"
         },
+        autoFocus:false,
       });
     }
 
@@ -40,6 +41,7 @@ export class ProjComponent implements OnInit {
           gitLink: "https://github.com/amkumar645/8-Puzzle-Solver",
           pc: "https://www.cs.princeton.edu/"
         },
+        autoFocus:false,
       });
     }
 
@@ -53,6 +55,7 @@ export class ProjComponent implements OnInit {
           languages: "Angular, Python",
           gitLink: "https://github.com/amkumar645/NBA-Comparer",
         },
+        autoFocus:false,
       });
     }
 
@@ -66,6 +69,7 @@ export class ProjComponent implements OnInit {
           languages: "Angular",
           gitLink: "https://github.com/amkumar645/Personal-Site",
         },
+        autoFocus:false,
       });
     }
 
@@ -79,6 +83,21 @@ export class ProjComponent implements OnInit {
           languages: "C",
           gitLink: "https://github.com/amkumar645/FileTree",
         },
+        autoFocus:false,
+      });
+    }
+
+    if (proj == "Piel") {
+      this.dialog.open(ProjDialogComponent, {
+        data: {
+          title: "Piel",
+          image: "assets/Piel3.png",
+          intro: "Even though AI has the potential to save thousands of lives in healthcare, it frequently underperforms on minority patients due to a lack of proper representation in datasets. Skin cancer is no exception. Out of 21 open-access datasets with a over 100,000 skin cancer images, only 10 images were self-identified as having brown skin.", 
+          description: "For the Biomedical Entrepreneur Network Hackathon run by MLH, my brother and I decided to remedy this issue by creating an iPhone app that detects skin cancer in patients across all skin tones. To do this, we collected images across each of the different skin tones to create a more balanced training set. Then, we created a VGG-based Convolutional Neural Network to predict a skin cancer risk score based on a given image. Lastly, we used XCode to integrate the model into an iPhone app which allowed the user to input a photo, which the model then predicted a skin cancer risk probability for. This project went on to win first place at the BEN Hacks competition.",
+          languages: "Python, Swift",
+          slidesLink: "https://docs.google.com/presentation/d/1tkQlTwsZEU5eH1DXSbgSpfj7zQMoMvnwnTGeE7f49Bs/edit?usp=sharing"
+        },
+        autoFocus:false,
       });
     }
 
@@ -93,6 +112,7 @@ export class ProjComponent implements OnInit {
           gitLink: "https://github.com/amkumar645/Image-Classifier",
           pc: "https://www.cs.princeton.edu/"
         },
+        autoFocus:false,
       });
     }
     

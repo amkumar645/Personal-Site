@@ -33,7 +33,7 @@
 .desc-title {
     font-family: Montserrat;
     font-weight: bolder;
-    font-size: 3vw;
+    font-size: 2rem;
     margin-bottom: 5vh;
 }
 
@@ -63,10 +63,10 @@ li {
 
 .pfp {
     margin-top: 15vh;
-    text-align: center;
+    text-align: right;
 }
 .pfp-img {
-    height: 33vh;
+    height: 260px;
     border: 5px solid #343A3F;
     border-radius: 50%;
 }
@@ -128,4 +128,22 @@ li {
     text-align: right;
     margin-right: 7vw;
     font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .desc {
+        font-family: Montserrat;
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .pfp {
+        margin-top: 15vh;
+        text-align: center;
+    }
+    .pfp-img {
+        height: 260px;
+        border: 5px solid #343A3F;
+        border-radius: 50%;
+    }
 }

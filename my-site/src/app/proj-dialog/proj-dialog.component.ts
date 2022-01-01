@@ -1,6 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -11,6 +11,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class ProjDialogComponent implements OnInit {
   faClose = faTimes;
   faGithub = faGithub;
+  faGoogle = faGoogleDrive;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, public dialogRef: MatDialogRef<any>) {}
 
