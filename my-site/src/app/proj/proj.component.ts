@@ -49,11 +49,12 @@ export class ProjComponent implements OnInit {
       this.dialog.open(ProjDialogComponent, {
         data: {
           title: "NBA Comparer",
-          image: "assets/NBA2.png",
+          image: "assets/NBA4.png",
           intro: "As a big fan of basketball, I love comparing NBA players statistics in order to judge who's having a good season and who isn't. One day, when I was first learning Angular, I decided a great way to practice was to create a website dedicated to comparing NBA players' statistics against each other, so I did. As my first ever website, it has some issues, but the functionality is there.",
           description: "This website, while quite simple, has a lot of underlying processes. All the data came from merging preexisting datasets and adding in values by hand, and all the images were scraped from basketball-reference.com. The data covers years 1950-2020 completely, allowing the user to compare any two individual seasons in this range. In addition, there is a section where the user can view the data season-by-season, and sort it according to different statistics. Lastly, due to the changing nature of the NBA, there is a way to compare adjusted statistics, which standardizes based on season.",
           languages: "Angular, Python",
           gitLink: "https://github.com/amkumar645/NBA-Comparer",
+          webLink: "https://nba-comparer.herokuapp.com/",
         },
         autoFocus:false,
       });

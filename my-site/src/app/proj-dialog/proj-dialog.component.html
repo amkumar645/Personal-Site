@@ -7,6 +7,7 @@
 <p class="description">{{data.description}}</p>
 <p class="lang"><b><u>Languages</u>:&nbsp; </b>{{data.languages}}</p>
 <p *ngIf="data.pc" class="lang"><b><u>Photo credits</u>:&nbsp; </b><a href={{data.pc}} target="_blank">{{data.pc}}</a></p>
+<p *ngIf="data.webLink" class="lang"><b><u>Website Link</u>:&nbsp; </b><a href={{data.webLink}} target="_blank">{{data.webLink}}</a></p>
 <p *ngIf="data.gitLink" class="code"><b>Check out the code!</b></p>
 <div *ngIf="data.gitLink" class="btn-code">
     <button type="button" class="btn btn-primary">
