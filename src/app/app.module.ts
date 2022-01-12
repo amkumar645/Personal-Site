@@ -37,3 +37,11 @@ import { FooterComponent } from './footer/footer.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+/* TO DEPLOY
+
+COMMIT CHANGES
+BUILD with ng build --prod --base-href "/"
+RECOMMIT CHANGES?
+Run npx angular-cli-ghpages --dir=dist/my-site
+Go to Github and change domain name
+*/

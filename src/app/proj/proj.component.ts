@@ -74,6 +74,34 @@ export class ProjComponent implements OnInit {
       });
     }
 
+    if (proj == "RMS") {
+      this.dialog.open(ProjDialogComponent, {
+        data: {
+          title: "Recruitment Management System",
+          image: "assets/RMS2.png",
+          intro: "At my internship at RIA Advisory, I was tasked with learning both Angular and Spring, and then applying them to create a recruitment management system. My work on this project resulted in RIA hiring me to work part-time as a full-stack consultant.",
+          description: "This project is designed to emulate an applicant portal through three consoles with varying levels of access based on login credentials. The first console is the Application Console, which is only accesible by non-employees, and allows applicants to update their personal information and search/apply for jobs. The other two consoles are the Admin Console and the Interviewer Console, which allow employees to add/delete jobs, as well as schedule interviews and view candidates' information. To see all of the features implemented, I recommend watching the video. It's a little long, but there was a lot to show.",
+          languages: "Angular, Spring, Java",
+          vidLink: "https://drive.google.com/file/d/15tprxkfyIVFDa1yC3gHRX6-p6CnWJDBR/view?usp=sharing",
+        },
+        autoFocus:false,
+      });
+    }
+
+    if (proj == "Web") {
+      this.dialog.open(ProjDialogComponent, {
+        data: {
+          title: "Web Scrapers",
+          image: "assets/Scraping2.png",
+          intro: "After struggling to get a good dataset for the NBA Comparer project, I was interested in finding a way to control the data collection process. This led me to Scrapy and Selenium, and after learning both, I decided to put my new skills to work on some projects scraping popular websites.",
+          description: "This project contains three different web scrapers. The first allows the user to type their desired job position and location, and then scrapes Indeed's most relevant jobs relating to these two search queries. The second scrapes the r/nba subreddit for daily highlights. The third scrapes the Billboard Hot 100 for the hottest songs of the week.",
+          languages: "Scrapy, Selenium, Python",
+          gitLink: "https://github.com/amkumar645/Web-Scraper",
+        },
+        autoFocus:false,
+      });
+    }
+
     if (proj == "FT") {
       this.dialog.open(ProjDialogComponent, {
         data: {

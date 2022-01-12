@@ -26,4 +26,14 @@
         </a>
     </button>
 </div>
+<p *ngIf="data.vidLink" class="code"><b>See the video!</b></p>
+<div *ngIf="data.vidLink" class="btn-code">
+    <button type="button" class="btn btn-primary">
+        <a class="btn-txt" href={{data.vidLink}} target="_blank">
+            <span >VIDEO &nbsp;</span> 
+            <fa-icon [icon]="faGoogle" class="icon resume-icon"></fa-icon>
+        </a>
+    </button>
+</div>
+
 
